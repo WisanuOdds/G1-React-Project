@@ -20,3 +20,4 @@ function App() {
 }
 
 export default App   // ส่วนนี้คือการ export คลาส App ออกไปให้โปรเจคอื่นๆ ใช้งาน
+//
