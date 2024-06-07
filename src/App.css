@@ -12,3 +12,8 @@ body {
 .input{
   margin-right: 10px;
 }
+
+.Delete{
+  color: #f14646;
+  margin-left: 10px;
+}

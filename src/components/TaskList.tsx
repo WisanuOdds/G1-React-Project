@@ -1,7 +1,7 @@
 import Task from "./Task"
 
 interface TaskListProps {
-  list: Array<string>
+  list: string[]
   checked:boolean[]
   onCheck: (id:number) => void
   

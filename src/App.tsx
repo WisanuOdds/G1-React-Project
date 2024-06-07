@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import AddTodoForm from "./components/AddTodoForm";
 import Tasklist from "./components/TaskList";
@@ -10,6 +10,8 @@ function App() {
   const checkBoolean = (id: number) => {
     setcheckbox(checkbox.map((j, i) => i===id ? !j:j))
   }
+  
+
   return (
     <>
       <body>
@@ -18,13 +20,13 @@ function App() {
           <AddTodoForm
             setcheckbox={setcheckbox}
             setTask={setTask}
-            task={task}
             setList={setList}
+            task={task}
             list={list}
-            checkbox = {checkbox}
+            checkbox={checkbox}
           />
+          <Tasklist list={list}  checked={checkbox} onCheck={checkBoolean} />
         </div>
-        <Tasklist list={list}  checked={checkbox} onCheck={checkBoolean} />
       </body>
     </>
   );
