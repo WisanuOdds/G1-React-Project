@@ -81,9 +81,21 @@ button:focus-visible {
 }
 .NavBar{
   display:flex ;
-  justify-content:space-evenly;
+  justify-content:center;
   width:100%;
-  padding: 10px;
   background-color: #242424;
   color: white;
+}
+.Member{
+  display: flex;
+  flex-direction: row;
+
+}
+.name{
+  margin-right: 10px;
+}
+
+.buttonNavbar{
+  margin-right: 10px;
+
 }

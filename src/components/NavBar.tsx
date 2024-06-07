@@ -1,11 +1,11 @@
 const NavBar =() => {
     return (
         <div className="NavBar">
-        <a>
-            <button>Go to Homepage</button>
+        <a href="/">
+            <button className="buttonNavbar">Go to Homepage</button>
         </a>
-        <a>
-            <button>Go to App</button>
+        <a  href="/todo">
+            <button className="buttonNavbar">Go to App</button>
         </a>
         </div>
     )

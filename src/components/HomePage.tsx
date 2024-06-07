@@ -1,21 +1,23 @@
-import NavBar from "./NavBar"
+import NavBar from "./NavBar";
 
-const HomePage =() => {
-    return (
-        <div id="homepage" className="homepage">
-            <NavBar/>
-            <h1>This Is HomePage</h1>
-            <h2>G1</h2>
-            <h3>Dara</h3>
-            <h3>Non</h3>
-            <h3>Netdy</h3>
-            <h3>Net</h3>
-            <h3>Pun</h3>
-            <h3>Bung</h3>
-            <h3>Tle</h3>
-            <h3>JuJu</h3>
-        </div>
-    )
-}
+const HomePage = () => {
+  return (
+    <div id="homepage" className="homepage">
+      <NavBar />
+      <h1>This Is HomePage</h1>
+      <h2>G1 Member !!</h2>
+      <div className="Member">
+        <h3 className="name">Dara</h3>
+        <h3 className="name">Non</h3>
+        <h3 className="name">Netdy</h3>
+        <h3 className="name">Net</h3>
+        <h3 className="name">Pun</h3>
+        <h3 className="name">Bung</h3>
+        <h3 className="name">Tle</h3>
+        <h3 className="name">JuJu</h3>
+      </div>
+    </div>
+  );
+};
 
-export default HomePage 
+export default HomePage;

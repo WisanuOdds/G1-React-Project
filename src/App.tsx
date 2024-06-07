@@ -1,35 +1,19 @@
-import {useState } from "react";
+
 import "./App.css";
-import AddTodoForm from "./components/AddTodoForm";
-import Tasklist from "./components/TaskList";
-import NavBar from "./components/NavBar";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import ToDoApp from "./components/ToDoApp";
 
 function App() {
-  const [list, setList] = useState<string[]>([]);
-  const [task, setTask] = useState("");
-  const [checkbox, setcheckbox] = useState<boolean[]>([]);
-  const checkBoolean = (id: number) => {
-    setcheckbox(checkbox.map((j, i) => i===id ? !j:j))
-  }
+  
+  const router = createBrowserRouter([
+    { path: "/", element: <HomePage /> },
+    { path: "/todo", element: <ToDoApp /> },
+  ]);
   
   return (
     <>
-      <body>
-        <div className="box">
-        <NavBar/>
-          <h1>Todo app</h1>
-          <AddTodoForm
-            setcheckbox={setcheckbox}
-            setTask={setTask}
-            setList={setList}
-            task={task}
-            list={list}
-            checkbox={checkbox}
-          />
-          <Tasklist list={list}  checked={checkbox} onCheck={checkBoolean} />
-        </div>
-      </body>
-     
+      <RouterProvider router={router} />
     </>
   );
 }
