@@ -1,4 +1,3 @@
-
 import NavBar from './NavBar';
 import AddTodoForm from './AddTodoForm';
 import Tasklist from './TaskList';
@@ -15,6 +14,7 @@ const ToDoApp = () => {
     <div><body>
     <div className="box">
     <NavBar/>
+      <div className='AppToDo'>
       <h1>Todo app</h1>
       <AddTodoForm
         setcheckbox={setcheckbox}
@@ -24,6 +24,7 @@ const ToDoApp = () => {
         list={list}
         checkbox={checkbox}
       />
+      </div>
       <Tasklist list={list}  checked={checkbox} onCheck={checkBoolean} />
     </div>
   </body></div>
