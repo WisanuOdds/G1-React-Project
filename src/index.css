@@ -99,3 +99,21 @@ button:focus-visible {
 .login{
   margin-bottom: 10px;
 }
+.list{
+  width: 500px;
+}
+.li-box{
+  width: 400px;
+  align-items: start;
+}
+.li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.checkbox{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
