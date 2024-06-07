@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+
 import NavBar from './NavBar';
 import AddTodoForm from './AddTodoForm';
 import Tasklist from './TaskList';
+import { useState } from 'react';
 
 const ToDoApp = () => {
     const [list, setList] = useState<string[]>([]);
