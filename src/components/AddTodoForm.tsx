@@ -1,5 +1,4 @@
 import { useRef, useEffect } from "react";
-
 interface AddTodoFormProps {
   setTask: (arg0: string) => void;
   setList: (arg0: string[]) => void;

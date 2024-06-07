@@ -7,6 +7,7 @@ const NavBar =() => {
         <a  href="/todo">
             <button className="buttonNavbar">Go to App</button>
         </a>
+        
         </div>
     )
 }

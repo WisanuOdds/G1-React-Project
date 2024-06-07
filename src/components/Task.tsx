@@ -1,13 +1,9 @@
-
 interface TaskProps {
     task: string
     index: number
     checked: boolean[]
     onChecked: (id:number) => void
 }
-
-
-
 const Task = (props: TaskProps) => {
     return (
         <>
@@ -22,5 +18,4 @@ const Task = (props: TaskProps) => {
         </>
     )
 }
-
 export default Task

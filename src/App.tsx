@@ -1,16 +1,27 @@
 
 import "./App.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import ToDoApp from "./components/ToDoApp";
+import NavBar from "./components/NavBar";
 
 function App() {
   
   const router = createBrowserRouter([
-    { path: "/", element: <HomePage /> },
-    { path: "/todo", element: <ToDoApp /> },
-  ]);
-  
+    { path: "/", element: <Layout />
+  ,children:[
+    { index: true, element: <HomePage /> },
+    { path: "todo", element: <ToDoApp /> },
+  ]},]);
+
+  function Layout(){
+    return (
+      <div className="body">
+        <NavBar />
+        <Outlet />
+      </div>
+    );
+  }
   return (
     <>
       <RouterProvider router={router} />

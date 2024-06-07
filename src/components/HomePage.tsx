@@ -1,9 +1,6 @@
-import NavBar from "./NavBar";
-
 const HomePage = () => {
   return (
     <div id="homepage" className="homepage">
-      <NavBar />
       <h1>This Is HomePage</h1>
       <h2>G1 Member !!</h2>
       <div className="Member">

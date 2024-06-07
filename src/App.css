@@ -4,8 +4,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-
   /* background color */
 }
 
@@ -20,6 +18,5 @@ body {
 
 
 .AppToDo{
-  padding-left: 34px;
-  
+  padding-left: 34px
 }
