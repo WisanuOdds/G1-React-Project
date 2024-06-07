@@ -15,10 +15,12 @@ const AddTodoForm = (props: AddTodoFormProps) => {
   }, []);
 
   const handle = () => {
-    props.setList([...props.list, props.task]);
-    props.setcheckbox([...props.checkbox, false]);
-    props.setTask("");
-    console.log(props.list);
+    if (props.task !== "") {
+      props.setList([...props.list, props.task]);
+      props.setcheckbox([...props.checkbox, false]);
+      props.setTask("");
+      console.log(props.list);
+    }
   };
 
   const handleDelete = () => {
