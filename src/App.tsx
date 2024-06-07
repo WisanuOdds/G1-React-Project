@@ -1,8 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import {useState } from "react";
 import "./App.css";
 import AddTodoForm from "./components/AddTodoForm";
 import Tasklist from "./components/TaskList";
-import HomePage from "./components/HomePage";
 import NavBar from "./components/NavBar";
 
 function App() {

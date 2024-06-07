@@ -1,10 +1,10 @@
 const NavBar =() => {
     return (
         <div className="NavBar">
-        <a href="">
+        <a>
             <button>Go to Homepage</button>
         </a>
-        <a href="">
+        <a>
             <button>Go to App</button>
         </a>
         </div>
